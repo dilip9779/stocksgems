@@ -62,7 +62,7 @@ class Index extends Controller
 		$htmlContent = file_get_contents('https://economictimes.indiatimes.com/markets/stocks/stock-screener/GARP');	
 		$DOM = new DOMDocument();
 		$DOM->loadHTML($htmlContent);
-		$Detail = $DOM->getElementsByTagName('td');
+		$Detail = $DOM->getElementsByTagName('td'); 
 		$i = 1;
 		foreach($Detail as $NodeDetail) 
 		{
